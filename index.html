@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorting Visualization</title>
+  <style>
+    .bar-container {
+      display: inline-block;
+      text-align: center;
+    }
+
+    .bar {
+      width: 20px;
+      margin-right: 2px;
+      background-color: steelblue;
+      vertical-align: bottom;
+    }
+
+    .bar-text {
+      margin-top: 4px;
+      font-size: 12px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  <button onclick="randomizeArray()">Randomize Array</button>
+  <button onclick="startSorting('insertion')">Insertion Sort</button>
+  <button onclick="startSorting('selection')">Selection Sort</button>
+  <button onclick="startSorting('bubble')">Bubble Sort</button>
+  <button onclick="startSorting('quick')">Quick Sort</button>
+  <button onclick="startSorting('merge')">Merge Sort</button>
+  <button onclick="startSorting('shell')">Shell Sort</button>
+  <button onclick="changeSize()">Change Size</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
